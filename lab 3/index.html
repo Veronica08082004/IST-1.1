@@ -2,7 +2,63 @@
 <html lang="uk">
     <head>
         <meta charset="UTF-8">
-       
+       <style>
+            
+  h1 {
+    text-align: center;
+    color:chocolate;
+  }
+  h3 {
+    text-align: center;
+  }
+   .mon {
+       display: grid;
+       grid-template-columns: repeat(12, 1fr);
+       gap: 10px;
+   }
+   .mun {
+       text-align: center;
+       background-color:brown;
+       padding: 20px;
+   }
+   .man {
+    text-align: center;
+    background-color:crimson;
+    padding: 20px;
+}
+.min {
+    text-align: center;
+    background-color:chocolate;
+    padding: 20px;
+}
+.mun {
+    grid-column: 1/4;
+    grid-row: 1;
+} 
+.man {
+    grid-column: 5/9;
+    grid-row: 1;
+} 
+.min {
+    grid-column: 9/13;
+    grid-row: 1;
+} 
+@media screen (min-width: 992px){
+    .mon {
+        width: 5%;
+    }
+}
+@media screen (min-width: 768px) and (max-width: 992px) {
+    .mon {
+        width: 15%;
+    }
+}
+@media screen (max-width: 768px) {
+    .mon {
+        width: 25%
+    }  
+}
+   </style>  
     </head>
     <body>
         <div class="mon">
